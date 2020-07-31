@@ -1,7 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import himg from "../src/images/himg.jpg";
-import common from "./Common";
+import img1 from "../src/images/img1.jpg";
 import Common from "./Common";
 
 const About = () => {
@@ -9,7 +7,7 @@ const About = () => {
     <>
       <Common
         name="I'm avilable for open to work"
-        imgsrc={himg}
+        imgsrc={img1}
         visit="/contact"
         btnname="Hire Me"
       />

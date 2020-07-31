@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import himg from "../src/images/himg.jpg";
 
 const Common = (props) => {
   return (
@@ -25,7 +24,7 @@ const Common = (props) => {
                   <img
                     src={props.imgsrc}
                     className="img-fluid animated"
-                    alt="image"
+                    alt="img"
                   />
                 </div>
               </div>

@@ -29,14 +29,14 @@ const Contact = () => {
   return (
     <>
       <div classname="my-5">
-        <h1 className="text-center">Contact Here</h1>
+        <h1 className="text-center">Contact Me</h1>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
             <form
               onSubmit={formSubmit}
-              action="https://formspree.io/raghavendramca.g@gmail.com"
+              action="https://cors-anywhere.herokuapp.com/https://formspree.io/mrgyynad"
               method="POST"
             >
               <div className="mb-3">
@@ -49,6 +49,7 @@ const Contact = () => {
                   value={data.fullname}
                   onChange={inputEvent}
                   placeholder="Enter Your Full Name"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -61,6 +62,7 @@ const Contact = () => {
                   value={data.phone}
                   onChange={inputEvent}
                   placeholder="Enter Your Mobile Number"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -73,6 +75,7 @@ const Contact = () => {
                   value={data.email}
                   onChange={inputEvent}
                   placeholder="Enter Your E-mail"
+                  required
                 />
               </div>
 
@@ -85,11 +88,11 @@ const Contact = () => {
                   name="msg"
                   value={data.msg}
                   onChange={inputEvent}
+                  required
                 ></textarea>
               </div>
               <div className="col-12">
                 <button className="btn btn-primary" type="submit">
-                  {" "}
                   Submit
                 </button>
               </div>
